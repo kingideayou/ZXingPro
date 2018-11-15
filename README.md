@@ -3,7 +3,11 @@
 # ZXingPro
 An extension for [zxing/zxing](https://github.com/zxing/zxing) & [journeyapps/zxing-android-embedded](https://github.com/journeyapps/zxing-android-embedded) convert barcode image to text  
 
-轻量级识别图片二维码插件，支持 [zxing/zxing](https://github.com/zxing/zxing) 和 [journeyapps/zxing-android-embedded](https://github.com/journeyapps/zxing-android-embedded)
+轻量级识别图片二维码插件，支持 [zxing/zxing](https://github.com/zxing/zxing) 和 [journeyapps/zxing-android-embedded](https://github.com/journeyapps/zxing-android-embedded) ，支持根据文本生成二维码
+
+## Feature
+- Decode barcode image
+- Generate barcode image
 
 ## Sample
 ![](http://ww1.sinaimg.cn/mw690/6db4aff6ly1fx8sy8hut7g20d80lz1dx.gif)
@@ -44,6 +48,10 @@ And add extra rule:
 val decoder = BitmapDecoder(this@MainActivity)
 val result:String = decoder.getRawResult(img)
 // result is barcode text
+
+// generate qrcode
+val bitmap = BitmapUtils.create2DCode("https://juejin.im/")
+// get qrcode bitmap
 ```
 
 ## Thanks
