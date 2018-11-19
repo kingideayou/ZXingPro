@@ -30,17 +30,8 @@ dependencies {
 
 ## ProGuard
 If you use [zxing/zxing](https://github.com/zxing/zxing) , add rules as zxing's README says.  
-And add extra rule:
-```pro
--dontwarn com.journeyapps:zxing-android-embedded.**
-```
 
 If you use [journeyapps/zxing-android-embedded](https://github.com/journeyapps/zxing-android-embedded), add rules as zxing-android-embedded's README says.  
-And add extra rule:
-```pro
--dontwarn com.google.zxing:core.**
-```
-**Attention**: The above progurad rules are correct.
 
 ## Simple usage snippet
 
