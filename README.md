@@ -30,9 +30,13 @@ dependencies {
 
 ## ProGuard
 If you use [zxing/zxing](https://github.com/zxing/zxing) , add rules as zxing's README says.  
-
+```groovy
+  implementation 'com.google.zxing:core:3.3.3'
+```
 If you use [journeyapps/zxing-android-embedded](https://github.com/journeyapps/zxing-android-embedded), add rules as zxing-android-embedded's README says.  
-
+```groovy
+  implementation 'com.journeyapps:zxing-android-embedded:3.6.0'
+```
 ## Simple usage snippet
 
 ```kotlin
