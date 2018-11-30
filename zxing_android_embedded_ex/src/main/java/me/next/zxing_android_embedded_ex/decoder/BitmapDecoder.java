@@ -57,6 +57,8 @@ public class BitmapDecoder {
         hints.put(DecodeHintType.POSSIBLE_FORMATS, decodeFormats);
         // 设置继续的字符编码格式为UTF8
         hints.put(DecodeHintType.CHARACTER_SET, "UTF8");
+        // 设置识别精确度（努力查找）
+        hints.put(DecodeHintType.TRY_HARDER, Boolean.TRUE);
         // 设置解析配置参数
         multiFormatReader.setHints(hints);
 
